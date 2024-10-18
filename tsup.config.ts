@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["./electron/main.ts", "./electron/preload.ts"],
+  entry: ["./electron/src/main.ts", "./electron/src/preload.ts"],
   splitting: false,
   sourcemap: false,
   clean: true,
@@ -13,4 +13,3 @@ export default defineConfig({
   format: ["cjs"],
   bundle: true,
 });
-
